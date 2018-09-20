@@ -1,0 +1,26 @@
+#READ NUMBER
+def redNumber():
+    n=-1
+    while n<0:
+        n=int(input('Digite um número inteiro e positivo: '))
+    return n
+
+#SUM DIGITS
+def somaDigito(n):
+    soma=0
+    lista=[]
+    for i in str(n):
+        i=int(i)
+        lista.append(i)
+    for j in range(0,len(lista)):
+        soma= soma + lista[j]
+    return soma
+
+#GLOBAL
+def Global():
+    n=redNumber()
+    soma=somaDigito(n)
+    print(f'A soma dos digitos do número {n} é: {soma} ')
+
+
+Global()
